@@ -1,0 +1,36 @@
+/* Aqui añadiremos los diferentes font-face de cada tipografía */
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../assets/fonts/Quicksand/Quicksand-Light.eot');
+    src: url('../assets/fonts/Quicksand/Quicksand-Light.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Quicksand/Quicksand-Light.woff2') format('woff2'),
+        url('../assets/fonts/Quicksand/Quicksand-Light.woff') format('woff'),
+        url('../assets/fonts/Quicksand/Quicksand-Light.svg#Quicksand-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('../assets/fonts/Mona_Sans/MonaSans-ExtraLight.eot');
+    src: url('../assets/fonts/Mona_Sans/MonaSans-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Mona_Sans/MonaSans-ExtraLight.woff2') format('woff2'),
+        url('../assets/fonts/Mona_Sans/MonaSans-ExtraLight.woff') format('woff'),
+        url('../assets/fonts/Mona_Sans/MonaSans-ExtraLight.svg#MonaSans-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src: url('../assets/fonts/Mona_Sans/MonaSans-ExtraLightItalic.eot');
+    src: url('../assets/fonts/Mona_Sans/MonaSans-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Mona_Sans/MonaSans-ExtraLightItalic.woff2') format('woff2'),
+        url('../assets/fonts/Mona_Sans/MonaSans-ExtraLightItalic.woff') format('woff'),
+        url('../assets/fonts/Mona_Sans/MonaSans-ExtraLightItalic.svg#MonaSans-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}

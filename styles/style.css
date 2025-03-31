@@ -1,0 +1,89 @@
+/* se importa las fuentes que hemos elegido */
+@import url(./fonts.css);
+
+/* variables CSS con los colores de nuestra paleta */
+:root{
+    --mainColor: #0D1321;
+    --mainColorRGB: rgb(13, 19, 33);
+    --secondaryColor: #1D2D44;
+    --secondaryColorRGB: rgb(29, 45, 68);
+    --tertiaryColor: #3E5C76;
+    --tertiaryColorRGB:rgb(62, 92, 118);
+    --ligherTertiaryColor: #748CAB;
+    --ligherTertiaryColorRGB:rgb(116, 140, 171);
+    --grey: #F0EBD8;
+    --greyRGB: rgb(240, 235, 216);
+    --white: #ffffff;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#videoBG {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    filter: blur(1.5px);
+}
+
+body{
+    place-items: center;
+}
+
+main {
+    width: 500px;
+}
+
+#mainForm{
+    padding: 30px;
+    padding-bottom: 50px;
+    background-color: rgba(13, 19, 33,0.70);
+    backdrop-filter: blur(8px);    
+    -webkit-backdrop-filter: blur(7.5px);
+    color: var(--white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    gap: 10px;
+    box-shadow: 0 4px 30px rgba(240, 235, 216, 0.2);
+    margin-top: 30vh;
+    height: 30vh;
+}
+
+#mainForm > h2{
+    font-family: 'Quicksand';
+    font-size: 2rem;
+}
+
+#mainForm > input,#signIn{
+    font-family: 'Mona Sans';
+    padding: 5px;
+    border-radius: 15px;
+    color: var(--white);
+}
+
+#mainForm > input{
+    background-color: var(--secondaryColor);
+    border: 1px solid rgba(62, 92, 118,0.3);
+    font-size: 1.2rem;
+}
+
+#mainForm > input:focus{
+    box-shadow: 0 4px 10px var(--ligherTertiaryColor);
+}
+
+#signIn{
+    width: 150px;
+    background-color: var(--tertiaryColor);
+    border: none;
+    font-size: 1rem;
+}
+
+#signIn:hover{
+    box-shadow: 0 4px 10px var(--ligherTertiaryColor);
+    cursor: pointer;
+}
