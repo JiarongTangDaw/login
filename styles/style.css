@@ -79,6 +79,7 @@ main {
 #signIn{
     width: 150px;
     background-color: var(--tertiaryColor);
+    font-family: 'Mona Sans';
     border: none;
     font-size: 1rem;
 }
