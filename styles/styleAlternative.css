@@ -1,0 +1,122 @@
+/* se importa las fuentes que hemos elegido */
+@import url(./fonts.css);
+
+/* variables CSS con los colores de nuestra paleta */
+:root{
+    --white: #0D1321;
+    --whiteRGB: rgb(13, 19, 33);
+    --grey: #1D2D44;
+    --greyRGB: rgb(29, 45, 68);
+    --ligherTertiaryColor: #3E5C76;
+    --ligherTertiaryColorRGB:rgb(62, 92, 118);
+    --tertiaryColor: #748CAB;
+    --tertiaryColorRGB:rgb(116, 140, 171);
+    --secondaryColor: #F0EBD8;
+    --secondaryColorRGB: rgb(240, 235, 216);
+    --mainColor: #ffffff;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#videoBG {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    filter: blur(1.5px);
+}
+
+body{
+    place-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#mainForm{
+    padding: 30px;
+    padding-bottom: 50px;
+    background-color: rgba(255, 255, 32553,0.40);
+    backdrop-filter: blur(8px);    
+    -webkit-backdrop-filter: blur(7.5px);
+    color: var(--white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    gap: 10px;
+    box-shadow: 0 4px 30px rgba(13, 19, 33, 0.5);
+    margin-top: 30vh;
+    height: 30vh;
+    width: 30%;
+}
+
+#mainForm > h2{
+    font-family: 'Quicksand';
+    font-size: 2rem;
+}
+
+#mainForm > input,#signIn{
+    font-family: 'Mona Sans';
+    padding: 5px;
+    border-radius: 15px;
+    color: var(--white);
+}
+
+#mainForm > input{
+    background-color: var(--secondaryColor);
+    border: 1px solid rgba(116, 140, 171,0.2);
+    font-size: 1.2rem;
+    width: 50%;
+}
+
+#mainForm > input:focus{
+    box-shadow: 0 4px 10px var(--ligherTertiaryColor);
+}
+
+#signIn{
+    width: 30%;
+    background-color: var(--tertiaryColor);
+    font-family: 'Mona Sans';
+    border: none;
+    font-size: 1rem;
+}
+
+#signIn:hover{
+    box-shadow: 0 4px 10px var(--ligherTertiaryColor);
+    cursor: pointer;
+}
+
+@media  (max-width: 1200px) {
+    #mainForm > h2{
+        font-size: 1.3rem;
+    }
+    #mainForm > input{
+        font-size: 1.1rem;
+        width: 60%;
+    }
+    #signIn{
+        font-size: 0.9rem;
+        width: 40%;
+    }
+}
+
+@media  (max-width: 680px) {
+    #mainForm > h2{
+        font-size: 1rem;
+    }
+    #mainForm > input{
+        font-size: 0.8rem;
+    }
+    #signIn{
+        font-size: 0.5rem;
+    }
+}
