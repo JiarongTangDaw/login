@@ -29,8 +29,30 @@
 
 body{
     place-items: center;
-    width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#cambio{
+    width: 20%;
+    background-color: var(--tertiaryColor);
+    font-family: 'Mona Sans';
+    border: none;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 15px;
+    color: var(--white);
+}
+
+#cambio:hover{
+    box-shadow: 0 4px 10px var(--secondaryColor);
+    cursor: pointer;
 }
 
 main {
@@ -107,6 +129,10 @@ main {
         font-size: 0.9rem;
         width: 40%;
     }
+    #cambio{
+        font-size: 0.9rem;
+        width: 20%;
+    }
 }
 
 @media  (max-width: 680px) {
@@ -116,7 +142,7 @@ main {
     #mainForm > input{
         font-size: 0.8rem;
     }
-    #signIn{
+    #signIn,#cambio{
         font-size: 0.5rem;
     }
 }
